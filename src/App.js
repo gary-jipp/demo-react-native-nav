@@ -1,22 +1,15 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, StatusBar, Text} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import Home from '/screen/Home';
+import About from '/screen/About';
 
 const App = function () {
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar />
-      <Text style={styles.text}>Hello React Native</Text>
+    <SafeAreaView>
+      <Home />
+      <About />
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  text: {fontSize: 24, fontWeight: '500'},
-});
 
 export default App;
